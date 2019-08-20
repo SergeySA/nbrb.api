@@ -29,3 +29,9 @@ echo $j;
 //echo '<pre>';
 //print_r(json_decode($j));
 //echo '</pre>';
+
+
+
+//header("Authorization: HX38jW44DZfLvIp_G3vPPsWPCvnpqm09yKmdOlX5DiV_5oYb");
+//$url = 'https://api.currentsapi.services/v1/latest-news?' . "language=en&apiKey=HX38jW44DZfLvIp_G3vPPsWPCvnpqm09yKmdOlX5DiV_5oYb";
+//$c = curl_init($url);

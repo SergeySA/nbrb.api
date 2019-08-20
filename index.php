@@ -1,10 +1,11 @@
 <?php
 
 require __DIR__ . './vendor/autoload.php';
+require_once __DIR__ . '/src/config.php';
 
 use App\Client;
 
-$client = new Client();
+$client = new Client(new \App\HttpTransport(), new \App\JsonSourceFormat());
 $rates = $client->getRates();
 ?>
 

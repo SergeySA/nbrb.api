@@ -6,5 +6,5 @@ namespace App;
 
 interface ITransport
 {
-    public function getContent($content, $cur_id = null, $dynamics = false);
+    public function getContent($content, $cur_id = null);
 }

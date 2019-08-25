@@ -24,9 +24,9 @@ class Client {
         return $this->sourceFormat->decode($output);
     }
 
-    public function getRates($cur_id = null)
+    public function getRates($cur_id = null, $parameters = [])
     {
-        $output = $this->transport->getContent('Rates', $cur_id);
+        $output = $this->transport->getContent('Rates', $cur_id, $on_date, $periodicity);
 
         return $this->sourceFormat->decode($output);
 
@@ -39,7 +39,7 @@ class Client {
 
     }
 
-    public function getDynamicRates()
+    public function getDynamicRates($cur_id, $start_date, $end_date)
     {
         $output = $this->transport->getContent('Rates/Dynamics', $cur_id);
     }

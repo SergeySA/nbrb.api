@@ -2,9 +2,6 @@
     "name": "api/app",
     "description": "none",
     "require": {
-        "symfony/http-foundation": "^4.3",
-        "symfony/http-kernel": "^4.3",
-        "symfony/routing": "^4.3"
     },
 
     "autoload": {
